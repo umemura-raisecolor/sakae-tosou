@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>東村山市の外壁塗装・屋根塗装｜サカエ塗装サービス</title>
+<meta name="description" content="創業30年以上、東村山市の外壁塗装専門店。現地調査・お見積り無料。価格つきの施工事例と、1㎡あたりの参考価格を公開しています。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;700&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"サカエ塗装サービス","legalName":"株式会社サカエコーポレーション","telephone":"0120-714-350","address":{"@type":"PostalAddress","postalCode":"189-0014","addressRegion":"東京都","addressLocality":"東村山市","streetAddress":"本町1-6-73 野口橋ビル1F"},"openingHours":"Mo-Su 09:00-20:00","areaServed":["東村山市","小平市","東大和市","清瀬市","東久留米市","西東京市","所沢市"],"description":"創業30年以上、東村山市の外壁塗装・屋根塗装・防水工事の会社"}
+</script>
+<script src="site.js"></script>
+</head>
+<body>
+<div id="head"></div>
+<main>
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <p class="hero-kicker"><span class="nw">東京都東村山市</span><span class="nw">平成6年創業の塗装店</span></p>
+    <h1><span>確かな塗装を、</span><span>適正な価格で。</span></h1>
+    <p class="lead">個人の塗装店から始まって30年あまり。東村山市を中心に、戸建てからアパート・マンションまで、費用対効果の高い塗り替えをご提案します。</p>
+    <div class="btns"><a class="btn btn-tel" href="tel:0120714350">無料で電話相談 <b>0120-714-350</b></a><a class="btn btn-line" href="contact.html">フォームでお見積り</a></div>
+  </div>
+  <p class="hero-note">写真はイメージです</p>
+</section>
+<section class="proof" aria-label="サカエ塗装サービスの実績と約束">
+  <div class="wrap proof-in">
+    <div><b>30<small>年以上</small></b><span>平成6年の創業から</span></div>
+    <div><b>46<small>件</small></b><span>施工事例の写真を掲載</span></div>
+    <div><b>0<small>円</small></b><span>現地調査・お見積り</span></div>
+    <div><b>6<small>種類</small></b><span>選べる塗料</span></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="origin">
+      <div class="o-left"><h3><span class="nw">価格を、</span><span class="nw">先にお見せします。</span></h3><p>塗装の費用は、わかりにくいもの。サカエ塗装サービスでは、1㎡あたりの参考価格と、実際の工事の金額を公開しています。お見積りの前に、だいたいの目安をつかんでいただけます。</p><a class="text-link" style="color:var(--gold)" href="price.html">塗料と価格を見る</a></div>
+      <div class="o-right"><h3><span class="nw">毎日の作業を、</span><span class="nw">写真でお届けします。</span></h3><p>決められた回数をきちんと塗っているか、ご自身で確かめていただけるよう、各工程の写真をメールやLINEでお送りします。お留守のあいだも、同じ品質で仕上げます。</p><a class="text-link" href="flow.html">ご依頼の流れを見る</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tint">
+  <div class="wrap">
+    <div class="sec-head"><h2>価格つきの施工事例</h2><p>実際の工事の坪数・塗料・工期と、お支払いいただいた金額です。</p></div>
+    <div class="priced" id="priced"></div>
+    <p class="more"><a class="btn btn-line" href="works.html">施工事例をもっと見る</a></p>
+  </div>
+</section>
+
+<script>
+function pricedCard(p){
+  return '<article class="pcard"><span class="area">'+p[0]+'</span><h3>'+p[1]+'</h3><p class="yen">'+p[6]+'<small>'+p[2]+'</small></p>'+
+  '<dl><dt>塗料</dt><dd>'+p[3]+'</dd><dt>工期</dt><dd>'+p[4]+'</dd><dt>完工</dt><dd>'+p[5]+'</dd></dl></article>';
+}
+function workCard(w){
+  var ph = function(f){ return f ? '<div class="photo"><img loading="lazy" src="'+IMG+f+'" onerror="fallback(this)" alt="'+w[0]+' '+w[1]+'の施工写真"></div>' : ''; };
+  return '<article class="work"><div class="pair'+(w[3]?'':' single')+'">'+ph(w[2])+ph(w[3])+'</div><span class="area">'+w[0]+'</span><h3>'+w[1]+'</h3></article>';
+}
+</script>
+
+<script>document.addEventListener("DOMContentLoaded",function(){document.getElementById("priced").innerHTML=PRICED.map(pricedCard).join("")});</script>
+
+<section class="sec navy">
+  <div class="wrap">
+    <div class="sec-head"><h2>おすすめの塗料の組み合わせ</h2><p>次の塗り替えまでの年数に合わせて、塗料をお選びいただけます。</p></div>
+    <div class="paints">
+      <div class="paint"><h3>約15年ごとの塗り替え</h3><p class="yrs">外壁:ラジカル/屋根:シリコン</p><p>屋根の傷みが早いお家は、屋根をフッ素にするのがおすすめです。</p></div>
+      <div class="paint"><h3>15〜20年ごとの塗り替え</h3><p class="yrs">サイディング:クリヤー塗装</p><p>サイディングの柄を活かすシリコンやフッ素のクリヤーに、屋根はシリコンかフッ素を組み合わせます。</p></div>
+      <div class="paint"><h3>できるだけ長く持たせたい</h3><p class="yrs">外壁:無機/屋根:フッ素</p><p>所沢市O様邸では、外壁に無機、屋根にフッ素、付帯部にラジカルを使いました。</p></div>
+    </div>
+    <p class="more"><a class="btn btn-line" href="price.html">6種類の塗料と1㎡あたりの価格</a></p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head"><h2>塗り替えの前に知っておきたいこと</h2></div>
+    <div class="knows">
+      <div class="know"><h3>外壁のひび割れ</h3><p>髪の毛ほどの細いひびは、下塗り材をすり込むだけで消えることもあります。幅0.3mm以上のひびは、Vカットなどの補修が必要です(国土交通省のガイドラインより)。</p></div>
+      <div class="know"><h3>屋根のアスベスト</h3><p>2004年以降に作られたコロニアル屋根の多くは、アスベストを含みません。含むものは葺き替えの処分が大変なため、費用を抑えるカバー工法が一般的です。</p></div>
+      <div class="know"><h3>現地調査の時間</h3><p>30〜40分ほどで終わります。建物によっては1時間以上かかることも。図面があると、よりスムーズです。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tint">
+  <div class="wrap">
+    <div class="sec-head"><h2>対応エリア</h2><p>東村山市を中心に、多摩地区・東京23区・埼玉県・神奈川県までうかがいます。</p></div>
+    <ul class="area-list"><li class="main">東村山市</li><li>小平市</li><li>東大和市</li><li>清瀬市</li><li>東久留米市</li><li>西東京市</li><li>武蔵村山市</li><li>国分寺市</li><li>小金井市</li><li>立川市</li><li>国立市</li><li>府中市</li><li>多摩地区全域</li><li>東京23区</li><li>所沢市</li><li>入間市</li><li>狭山市</li><li>新座市</li><li>富士見市</li><li>神奈川県(横浜・川崎・相模原ほか)</li></ul>
+  </div>
+</section>
+
+</main>
+<div id="foot"></div>
+</body>
+</html>
